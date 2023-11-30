@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+.accesorios{
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+    width: 100vw;
+}
+.titulo-accesorios{
+    display: flex;
+    justify-content: flex-start;
+    height: inherit;
+    width: inherit;
+    padding: 2%;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-size: 2em;
+} 
+.productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+}
+.producto{
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "imagen info precio"
+    "imagen info comprar"
+    ;
+    width: 90vw;
+    height: auto;
+}
