@@ -92,6 +92,19 @@ a:hover {
     transition: 0.2s;
 }
 
+
+/* Aqui empiezan los estilos  del main */
+
+.foto-camara {
+    background-image: url(/assets/imagenes/OptimizelyDesktopWebP.webp), 
+        radial-gradient(circle closest-corner at center, #feb319, #fffbec, silver);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+/* Aqui acaban los estilos del main */
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
