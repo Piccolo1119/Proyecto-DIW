@@ -92,33 +92,6 @@ a:hover {
     transition: 0.2s;
 }
 
-
-/* Aqui empiezan los estilos  del main */
-
-main {
-    background: radial-gradient(circle closest-corner at center, #feb319, #fffbec, silver);
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 100% 20% 20% 20% 20%;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "camara"
-        "imagencita1"
-        "texto1"
-        "imagencita2"
-        "texto2"
-}
-
-.foto-camara {
-    grid-area: camara;
-    background-image: url(/assets/imagenes/OptimizelyDesktopWebP.webp);
-    background-size: 60% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-/* Aqui acaban los estilos del main */
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
