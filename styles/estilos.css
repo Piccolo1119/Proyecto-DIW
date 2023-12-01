@@ -96,7 +96,6 @@ a:hover {
     transition: 0.2s;
 }
 
-<<<<<<< HEAD
 
 .foto-camara {
     grid-area: camara;
@@ -108,8 +107,6 @@ a:hover {
 
 
 /* Aqui acaban los estilos del main */
-=======
->>>>>>> 36a760b532eae1c42d497bf3d1f88764d81f1197
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
