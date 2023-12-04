@@ -1,0 +1,9 @@
+/* Aqui empiezan los estilos  del main */
+
+main {
+    background: url(/assets/imagenes/OptimizelyDesktopWebP.webp) center/50% auto no-repeat,
+                radial-gradient(circle closest-corner at center, #feb319, #fffbec, silver);
+    height: 100vh;
+}
+
+/* Aqui acaban los estilos del main */

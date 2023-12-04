@@ -9,7 +9,11 @@
 
 body {
     margin: 0;
+    padding-bottom: 100px; /* Altura del footer */
+    position: relative;
+    min-height: 100vh;
 }
+
 
 .logo {
     margin-left: 30px;
@@ -96,8 +100,11 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
 /* Aqui empiezan los estilos  del main */
 
+=======
+>>>>>>> 07eebbfc36f750dad262144897c5a0e239784086
 .foto-camara {
     grid-area: camara;
     background-image: url(/assets/imagenes/OptimizelyDesktopWebP.webp);
@@ -116,8 +123,10 @@ footer {
     ;
     background-color: #C0C0C0;
     height: auto;
-    width: 100vw;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 100px; /* Altura del footer */
 }
 
 .footer-content {
