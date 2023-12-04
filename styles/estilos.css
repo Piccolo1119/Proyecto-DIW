@@ -34,6 +34,9 @@ body {
     top: 0;
 }
 
+.list{
+    margin-right: 7em;
+}
 .list>ul {
     display: inline-flex;
     flex-direction: row;
@@ -94,20 +97,6 @@ a:hover {
 
 
 /* Aqui empiezan los estilos  del main */
-
-main {
-    background: radial-gradient(circle closest-corner at center, #feb319, #fffbec, silver);
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 100% 20% 20% 20% 20%;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "camara"
-        "imagencita1"
-        "texto1"
-        "imagencita2"
-        "texto2"
-}
 
 .foto-camara {
     grid-area: camara;
