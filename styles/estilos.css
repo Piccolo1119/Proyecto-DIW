@@ -100,11 +100,8 @@ a:hover {
 }
 
 
-<<<<<<< HEAD
 /* Aqui empiezan los estilos  del main */
 
-=======
->>>>>>> 07eebbfc36f750dad262144897c5a0e239784086
 .foto-camara {
     grid-area: camara;
     background-image: url(/assets/imagenes/OptimizelyDesktopWebP.webp);
