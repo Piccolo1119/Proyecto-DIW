@@ -2,6 +2,10 @@
     font-family: Poppins;
     src: url(../assets/fonts/Poppins-Regular.ttf);
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/fonts/Poppins-Medium.ttf);
+}
 .accesorios{
     display: flex;
     height: auto;
@@ -22,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: auto;
     width: 100vw;
 }
@@ -36,8 +41,6 @@
     ;
     width: 90vw;
     height: auto;
-}
-.producto-1{
     margin-bottom: 20px;
 }
 .image{
@@ -48,10 +51,53 @@
     grid-area: imagen;
     background: url(/assets/imagenes/funda.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
+}
+.img-producto2 {
+    grid-area: imagen;
+    background: url(/assets/imagenes/objetivo1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
+}
+.img-producto3 {
+    grid-area: imagen;
+    background: url(/assets/imagenes/bateria.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
+}
+.img-producto4 {
+    grid-area: imagen;
+    background: url(/assets/imagenes/objetivo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
+}
+.img-producto5 {
+    grid-area: imagen;
+    background: url(/assets/imagenes/tripode.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%; 
+    width: 100%; 
 }
 .info-accesorio{
     grid-area: info;
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 30px;
 }
 .comprar-accesorio{
     grid-area: comprar;
@@ -63,12 +109,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-family: Poppins;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
 }
 .comprar-accesorio > div {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Poppins;
+    font-weight: bold;
     background-color: black;
     border: 1px solid black;
     color: white;
