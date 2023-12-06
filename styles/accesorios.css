@@ -2,17 +2,20 @@
     font-family: Poppins;
     src: url(../assets/fonts/Poppins-Regular.ttf);
 }
+
 @font-face {
     font-family: Montserrat;
     src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
-.accesorios{
+
+.accesorios {
     display: flex;
     height: auto;
     flex-flow: row wrap;
     width: 100vw;
 }
-.titulo-accesorios{
+
+.titulo-accesorios {
     display: flex;
     justify-content: flex-start;
     height: inherit;
@@ -21,8 +24,9 @@
     font-family: 'Poppins';
     font-style: italic;
     font-size: 2em;
-} 
-.productos{
+}
+
+.productos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,14 +34,15 @@
     height: auto;
     width: 100vw;
 }
-.producto{
+
+.producto {
     display: grid;
     box-shadow: 0 0 5px 3px black;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "imagen info precio"
-    "imagen info comprar"
+    grid-template-areas:
+        "imagen info precio"
+        "imagen info comprar"
     ;
     width: 90vw;
     height: 18%;
@@ -45,59 +50,67 @@
     margin-bottom: 20px;
     border-radius: 50px;
 }
-.producto:hover{
+
+.producto:hover {
     height: auto;
 }
-.image{
+
+.image {
     height: 300px;
     width: 300px;
 }
-.img-producto1{
+
+.img-producto1 {
     grid-area: imagen;
     background: url(/assets/imagenes/funda.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100%; 
-    width: 100%; 
+    height: 100%;
+    width: 100%;
 }
+
 .img-producto2 {
     grid-area: imagen;
     background: url(/assets/imagenes/objetivo1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100%; 
-    width: 100%; 
+    height: 100%;
+    width: 100%;
 }
+
 .img-producto3 {
     grid-area: imagen;
     background: url(/assets/imagenes/bateria.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100%; 
-    width: 100%; 
+    height: 100%;
+    width: 100%;
 }
+
 .img-producto4 {
     grid-area: imagen;
     background: url(/assets/imagenes/objetivo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100%; 
-    width: 100%; 
+    height: 100%;
+    width: 100%;
 }
+
 .img-producto5 {
     grid-area: imagen;
     background: url(/assets/imagenes/tripode.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 100%; 
-    width: 100%; 
+    height: 100%;
+    width: 100%;
 }
-.info-accesorio{
+
+.info-accesorio {
     grid-area: info;
     display: flex;
     align-items: center;
@@ -105,15 +118,18 @@
     font-size: 20px;
     padding: 25px;
 }
-.info-accesorio:hover{
+
+.info-accesorio:hover {
     font-size: 24px;
 }
-.comprar-accesorio{
+
+.comprar-accesorio {
     grid-area: comprar;
     display: flex;
     justify-content: space-around;
 }
-.precio-accesorio{
+
+.precio-accesorio {
     grid-area: precio;
     display: flex;
     justify-content: space-around;
@@ -123,7 +139,8 @@
     font-weight: bold;
     font-size: 30px;
 }
-.comprar-accesorio > div {
+
+.comprar-accesorio>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,8 +154,110 @@
     border-radius: 50px;
     transition: 0.4s;
 }
-.comprar-accesorio > div:hover {
+
+.comprar-accesorio>div:hover {
     cursor: pointer;
     scale: 1.04;
     box-shadow: 0px 0px 5px 5px #ffb419;
+}
+
+@media screen and (max-width: 768px) {
+    .titulo-accesorios {
+        display: flex;
+        justify-content: flex-start;
+        height: inherit;
+        width: inherit;
+        font-family: 'Poppins';
+        font-style: italic;
+        font-size: 1.4em;
+    }
+
+    .producto {
+        display: grid;
+        box-shadow: 0 0 5px 3px black;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "imagen info"
+            "imagen info"
+            "precio comprar"
+            ;
+        width: 90vw;
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+    }
+
+    .img-producto1,
+    .img-producto2,
+    .img-producto3,
+    .img-producto4,
+    .img-producto5 {
+        grid-area: imagen;
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* Modificado para cubrir completamente el contenedor */
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info-accesorio {
+        grid-area: info;
+        display: flex;
+        align-items: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .precio-accesorio {
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .comprar-accesorio {
+        grid-area: comprar;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 425px){
+    .titulo-accesorios {
+        font-size: 1.2em;
+    }
+
+    .producto {
+        display: grid;
+        box-shadow: 0 0 5px 3px black;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "imagen info"
+            "imagen info"
+            "precio comprar"
+            ;
+        width: 90vw;
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+    }
+    .info-accesorio {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .precio-accesorio {
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+    .comprar-accesorio>div {
+        width: 75px;
+        height: 30px;
+        border-radius: 50px;
+        transition: 0.4s;
+        font-size: 12px;
+    }
 }
