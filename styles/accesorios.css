@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: Montserrat;
-    src: url(/assets/fonts/Poppins-Medium.ttf);
+    src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 .accesorios{
     display: flex;
@@ -40,8 +40,13 @@
     "imagen info comprar"
     ;
     width: 90vw;
-    height: auto;
+    height: 18%;
+    overflow: hidden;
     margin-bottom: 20px;
+    border-radius: 50px;
+}
+.producto:hover{
+    height: auto;
 }
 .image{
     height: 300px;
@@ -97,7 +102,11 @@
     display: flex;
     align-items: center;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 25px;
+}
+.info-accesorio:hover{
+    font-size: 24px;
 }
 .comprar-accesorio{
     grid-area: comprar;
