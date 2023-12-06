@@ -1,5 +1,6 @@
 @font-face {
-    font-family: Poppins; /* TITULOS */
+    font-family: Poppins;
+    /* TITULOS */
     src: url(/assets/fonts/Poppins-Regular.ttf);
 }
 
@@ -9,7 +10,8 @@
 
 body {
     margin: 0;
-    padding-bottom: 100px; /* Altura del footer */
+    padding-bottom: 100px;
+    /* Altura del footer */
     position: relative;
     min-height: 100vh;
     overflow-x: hidden;
@@ -17,14 +19,29 @@ body {
 
 
 .logo {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 75px;
     margin-left: 30px;
     padding: 20px;
+}
+
+
+.logo img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nav-bar {
     background-color: black;
     display: inline-flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     height: 13vh;
@@ -34,14 +51,19 @@ body {
     font-family: 'Poppins';
 }
 
+.nav-bar-2 {
+    display: none;
+}
+
 .cabecera {
     position: sticky;
     top: 0;
 }
 
-.list{
+.list {
     margin-right: 7em;
 }
+
 .list>ul {
     display: inline-flex;
     flex-direction: row;
@@ -96,7 +118,7 @@ a {
 
 a:hover {
     color: #ffb419;
-    border-bottom:2px solid #ffb419;
+    border-bottom: 2px solid #ffb419;
     transition: 0.2s;
 }
 
@@ -124,7 +146,8 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px; /* Altura del footer */
+    height: 100px;
+    /* Altura del footer */
 }
 
 .footer-content {
@@ -143,9 +166,11 @@ footer {
     justify-content: center;
     gap: 20px;
 }
-.footer-content > ul > li{
+
+.footer-content>ul>li {
     list-style: none;
 }
+
 .ig {
     background-image: url(/assets/imagenes/ig-2.png);
     background-size: contain;
@@ -179,6 +204,7 @@ footer {
     width: calc(40px * 1.5);
     cursor: pointer;
 }
+
 .tiktok {
     background-image: url(/assets/imagenes/tiktok-1.png);
     background-size: contain;
@@ -195,11 +221,92 @@ footer {
     width: calc(40px * 1.5);
     cursor: pointer;
 }
-.iframe{
+
+.iframe {
     display: flex;
     flex-direction: row;
     grid-area: iframe;
     align-items: center;
     justify-content: flex-end;
     margin-right: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-2 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        font-family: 'Poppins';
+        height: 15vh;
+        width: 100vw;
+        padding: 0.5em 1em;
+    }
+
+    .list-responsive {
+        display: flex;
+        height: auto;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .img-responsive {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .logo {
+        margin-left: 0.5em;
+    }
+
+    .footer-content {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-2 {
+        height: 10vh;
+    }
+
+    .list-responsive {
+        gap: 8px;
+    }
+
+    .img-responsive {
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+    .login {
+        height: 20px;
+        width: 20px;
+    }
+
+    .compra {
+        height: 20px;
+        width: 20px;
+    }
+
+    .footer-content {
+        font-size: 10px;
+    }
 }
