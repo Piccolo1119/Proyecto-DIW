@@ -227,22 +227,6 @@
     .titulo-accesorios {
         font-size: 1.2em;
     }
-
-    .producto {
-        display: grid;
-        box-shadow: 0 0 5px 3px black;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "imagen info"
-            "imagen info"
-            "precio comprar"
-            ;
-        width: 90vw;
-        height: 400px;
-        margin-bottom: 20px;
-        border-radius: 50px;
-    }
     .info-accesorio {
         font-size: 11px;
         padding: 10px;
