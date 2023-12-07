@@ -1,12 +1,15 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body{
-    background-color: black;
-    color: white;
-    /* font-family:; */
-/*     padding: 0 1.5em ; */
+    background-color: lightgray;
+    color: black;
 }
 
 .contenido{
@@ -22,11 +25,12 @@ body{
 }
 
 .titulo span {
-    color: red;
+    color: rgb(215, 180, 25)
 }
 
 .contacta{
-    box-shadow: 0 0 20px rgba(255, 255, 255, .3);
+    box-shadow: 0 0 150px rgb(215, 180, 25);
+    
 }
 
 .contacta > * {
@@ -34,7 +38,7 @@ body{
 }
 
 .formulario{
-    background: #222222;
+    background:rgb(50, 44, 44);
 }
 
 .formulario form{
@@ -53,19 +57,22 @@ body{
 
 .formulario form button,
 .formulario form input,
-
 .formulario form textarea{
     width: 100%;
     padding: .7em;
     border: none;
     background: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgb(215, 180, 25);
     outline: 0;
     color:aliceblue
 }
 .formulario form p{
     margin: 0;
     padding: 2em;
+    color: aliceblue;
+}
+.formulario h3{
+    color: aliceblue;
 }
 .formulario form button {
     background: #b70321;
@@ -82,12 +89,13 @@ body{
 }
 
 .info{
-    background: #000;
+    background: grey;
 }
 
 .info h4, .info ul, .info p{
     text-align: center;
     margin: 0 0 1rem 0;
+    color:aliceblue
 }
 
 .info ul{
@@ -99,8 +107,24 @@ body{
     padding: .5em;
 } 
 
-.iconos{
-    background-color: white;
+/* Tamaño para pantalla completa */
+
+@media (min-width: 700px) {
+
     
+    .contacta{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin-bottom: 4em;
+    }
+
+    .contacta > *{
+        padding: 2em;
+    }
+
+    .contacta h4, .contacta ul, .contacta p{
+        padding: 1em;
+        text-align: left;
+    }
 
 }
