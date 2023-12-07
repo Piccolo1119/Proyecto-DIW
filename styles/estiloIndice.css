@@ -1,9 +1,78 @@
-/* Aqui empiezan los estilos  del main */
-
-main {
-    background: url(/assets/imagenes/OptimizelyDesktopWebP.webp) center/50% auto no-repeat,
-                radial-gradient(circle closest-corner at center, #feb319, #fffbec, silver);
-    height: 100vh;
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins-Black.ttf);
 }
 
-/* Aqui acaban los estilos del main */
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+
+body {
+    background: radial-gradient(circle closest-corner at center, #feb319, #fffbec, silver);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    height: auto;
+}
+.foto-camara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/imagenes/OptimizelyDesktopWebP.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 70vh;
+}
+.texto-camara {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 40% 40% 20%;
+    grid-row-gap: 15%;
+    grid-template-areas:
+        "titulo ."
+        "texto ."
+        ". carrito";
+}
+.texto-camara h2 {
+    grid-area: titulo;
+    margin-left: 20%;
+    font-family: Poppins;
+    font-size: 40px;
+}
+.texto-camara p {
+    grid-area: texto;
+    margin-left: 10%;
+    display: flex;
+    width: 60%;
+    font-family: Montserrat;
+    text-align: justify;
+    font-size: 20px;
+}
+.texto-camara button {
+    grid-area: carrito;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 40%;
+    background-color: rgb(59, 58, 61);
+    border: none;
+    border-radius: 10px;
+    background-image: url('/assets/imagenes/carrito.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.texto-camara button:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+
+

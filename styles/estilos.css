@@ -123,18 +123,6 @@ a:hover {
 }
 
 
-/* Aqui empiezan los estilos  del main */
-
-.foto-camara {
-    grid-area: camara;
-    background-image: url(/assets/imagenes/OptimizelyDesktopWebP.webp);
-    background-size: 60% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-/* Aqui acaban los estilos del main */
 footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
