@@ -119,9 +119,9 @@
     padding: 25px;
 }
 
-.producto:hover {
+/* .producto:hover {
     font-size: 24px;
-}
+} */
 
 .comprar-accesorio {
     grid-area: comprar;
