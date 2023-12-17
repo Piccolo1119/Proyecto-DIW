@@ -10,12 +10,12 @@ body{
     background-color: lightgray;
     color: black;
 }
-
 .contenido{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
+    font-family: Montserrat;
 }
 
 .titulo{
@@ -56,7 +56,6 @@ body{
 .formulario form .bloqueo{
     grid-column: 1/3;
 }
-
 .formulario form button,
 .formulario form input,
 .formulario form textarea{
@@ -100,7 +99,8 @@ body{
 .info h4, .info ul, .info p{
     text-align: center;
     margin: 0 0 1rem 0;
-    color:aliceblue
+    color:aliceblue;
+    font-family: Montserrat
 }
 
 .info ul{
@@ -114,7 +114,7 @@ body{
 
 /* Tamaño para pantalla completa */
 
-@media (min-width: 700px) {
+@media (min-width: 425px) {
 
     
     .contacta{

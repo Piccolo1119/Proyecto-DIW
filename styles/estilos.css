@@ -102,8 +102,11 @@ body {
     gap: 10px;
     padding: 8px;
     margin-right: 30px;
+    border: none;
 }
-
+.botones a:hover{
+    border: none;
+}
 a {
     color: white;
     text-decoration: none;
