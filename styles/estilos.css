@@ -100,7 +100,7 @@ body {
 .botones {
     display: flex;
     gap: 10px;
-    padding: 8px;
+    padding-right: 8px;
     margin-right: 30px;
     border: none;
 }
@@ -221,21 +221,27 @@ footer {
     }
 
     .nav-bar-2 {
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         background-color: black;
-        color: white;
-        font-family: 'Poppins';
+        justify-content: space-between;
+        align-items: center;
         height: 15vh;
         width: 100vw;
-        padding: 0.5em 1em;
     }
 
     .list-responsive {
         display: flex;
         height: auto;
         align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    .botones{
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
         gap: 12px;
     }
 
@@ -259,6 +265,7 @@ footer {
     .logo {
         height: 50px;
         width: 50px;
+        margin-left: 33px;
     }
 
     .nav-bar {
@@ -266,11 +273,21 @@ footer {
     }
 
     .nav-bar-2 {
-        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: black;
+        place-content: center;
+        height: 15vh;
+        width: 100vw;
     }
 
     .list-responsive {
         gap: 8px;
+        margin-top: 4px;
+        margin-left: 30px;
+    }
+    .botones{
+        margin-left: 30px;
     }
 
     .img-responsive {
